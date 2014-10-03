@@ -882,7 +882,7 @@ tr.summary-details-excluded { font-style:italic; }
 
 /* Regular price */
 .regular-price { color:#c76200; }
-.regular-price .price { font-weight:bold; font-size:13px; color:#c76200; }
+.regular-price .price { font-weight:bold; font-size:13px; color:#fcff0b; }
 .block .regular-price,
 .block .regular-price .price { color:#2f2f2f; }
 
