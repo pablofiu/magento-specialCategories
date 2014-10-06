@@ -168,31 +168,3 @@
         <?php echo $this->getChildHtml('product_additional_data') ?>
     </div>
 </div>
-
-
-Magento Categories
-
-<?php
-$_categories = Mage::getBlockSingleton('catalog/navigation');
-foreach ($_categories->getStoreCategories() as $_category) {
-    $category = Mage::getModel('catalog/category');
-    $category->load($_category->getId());
-    $subcategories = explode(',', $category->getChildren());
-    ?>
-    <dl>
-        <dt><?php echo $this->htmlEscape($_category->getName()); ?></dt>
-        <dd>
-            <ol>
-                <?php
-                foreach ($subcategories as $subcategoryId) {
-                    $category->load($subcategoryId);
-                    echo '<li><a href="' . $category->getURL() . '">' . $category->getName() . '</a></li>';
-                }
-                ?>
-            </ol>
-        </dd>
-    </dl>
-<?php
-
-}
-?> 
