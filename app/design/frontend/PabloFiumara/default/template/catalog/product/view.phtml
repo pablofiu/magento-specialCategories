@@ -195,7 +195,14 @@ foreach ($_categories->getStoreCategories() as $_category) {
                 <?php
                 foreach ($subcategories as $subcategoryId) {
                     $category->load($subcategoryId);
-                    echo '<li><a href="' . $category->getURL() . '">' . $category->getName() . '</a></li>';
+
+
+                    if ($category->getName() != 'Women') {
+                        echo '<li><a href="' . $category->getURL() . '">' . $category->getName() . '</a></li>';
+                    }  elseif ($category->getName() == 'Women') {
+                        echo '<li><a href="' . $category->getURL() . '">' . $category->getName() . '</a> Hello</li>';
+                    }
+
                 }
                 ?>
             </ol>
