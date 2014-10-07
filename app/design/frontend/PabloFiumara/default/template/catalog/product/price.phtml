@@ -55,8 +55,11 @@ $_specialPriceStoreLabel = $this->getProductAttribute('special_price')->getStore
 
 $productId = $_product->getId();
 $productCategoryName = Mage::getModel('catalog/product')->load($productId)->getCategory()->getName();
+echo $productCategoryName;
 
-
+if ($productCategoryName == 'Jewelry') {
+    echo '<br> hello from if';
+}
 
 ?>
 
@@ -191,7 +194,7 @@ $productCategoryName = Mage::getModel('catalog/product')->load($productId)->getC
                     <?php echo $_coreHelper->formatPrice($_price + $_weeeTaxAmount, true) ?>
                 </span>
                 <span class="weee">(
-                    <?php foreach ($_weeeTaxAttributes as $_weeeTaxAttribute): ?>
+                        <?php foreach ($_weeeTaxAttributes as $_weeeTaxAttribute): ?>
                         <?php echo $_weeeSeparator; ?>
                         <?php echo $_weeeTaxAttribute->getName(); ?>: <?php echo $_coreHelper->currency($_weeeTaxAttribute->getAmount() + $_weeeTaxAttribute->getTaxAmount(), true, true); ?>
                         <?php $_weeeSeparator = ' + '; ?>
