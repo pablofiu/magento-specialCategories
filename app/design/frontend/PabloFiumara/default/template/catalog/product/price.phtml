@@ -214,7 +214,8 @@ $productCategoryName = Mage::getModel('catalog/product')->load($productId)->getC
                 <span class="test" id="product-price-<?php echo $_id ?><?php echo $this->getIdSuffix() ?>">
                     <?php if ($productCategoryName == 'Jewelry'): ?>
 
-                        <h3>Hello h3</h3><?php echo "hello from php" ;?>
+                        <span class="testing"><h3>Hello h3</h3>
+                        <?php echo "hello from php" ;?></span>
                         <h3>Second hello h3</h3>
                     <?php else: ?>
 

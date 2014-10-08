@@ -886,6 +886,7 @@ tr.summary-details-excluded { font-style:italic; }
 .test .price { font-weight:bold; font-size:13px; color: #1fff36; }
 .block .regular-price,
 .block .regular-price .price { color:#2f2f2f; }
+.testing { font-weight:bold; font-size:13px; color: #2a8cff; }
 
 /* Old price */
 .old-price { margin:0; }
