@@ -57,11 +57,6 @@ $productId = $_product->getId();
 $productCategoryName = Mage::getModel('catalog/product')->load($productId)->getCategory()->getName();
 echo $productCategoryName;
 
-if ($productCategoryName == 'Jewelry') {
-    echo '<br> hello from if';
-}
-
-echo '<h1 style="color:blue">Hello</h1>';
 
 ?>
 
@@ -218,6 +213,8 @@ echo '<h1 style="color:blue">Hello</h1>';
             <?php else: ?>
                 <span class="regular-price" id="product-price-<?php echo $_id ?><?php echo $this->getIdSuffix() ?>">
                     <?php if ($_finalPrice == $_price): ?>
+                        <?php if ($productCategoryName == 'Jewelry') ?>
+                            <h1 style="color:blue">This is a Jewelry product</h1>
                         <?php echo $_coreHelper->formatPrice($_price, true) ?>
                     <?php else: ?>
                         <?php echo $_coreHelper->formatPrice($_finalPrice, true) ?>
