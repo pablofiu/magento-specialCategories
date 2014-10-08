@@ -214,6 +214,7 @@ $productCategoryName = Mage::getModel('catalog/product')->load($productId)->getC
                 <span class="regular-price" id="product-price-<?php echo $_id ?><?php echo $this->getIdSuffix() ?>">
                     <?php if ($_finalPrice == $_price): ?>
                         <?php echo $productCategoryName; ?>
+                        <h1 style="color:blue">Hello from h1</h1>
                         <?php echo $_coreHelper->formatPrice($_price, true) ?>
                     <?php else: ?>
                         <?php echo $_coreHelper->formatPrice($_finalPrice, true) ?>
