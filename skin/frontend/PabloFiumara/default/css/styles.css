@@ -883,10 +883,10 @@ tr.summary-details-excluded { font-style:italic; }
 /* Regular price. If category is special, price colour is green. If not, it is blue.  */
 .regular-price { color:#c76200; }
 .regular-price .price { font-weight:bold; font-size:13px; color:#fcff0b; }
-.test .price { font-weight:bold; font-size:13px; color: #1fff36; }
-.specialStyle .price { font-weight:bold; font-size:13px; color: #2a8cff; }
 .block .regular-price,
 .block .regular-price .price { color:#2f2f2f; }
+.test .price { font-weight:bold; font-size:13px; color: #1fff36; }
+.specialStyle .price { font-weight:bold; font-size:13px; color: #2a8cff; }
 
 
 /* Old price */
