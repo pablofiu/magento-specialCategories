@@ -213,7 +213,6 @@ $productCategoryName = Mage::getModel('catalog/product')->load($productId)->getC
             <?php else: ?>
                 <span class="test" id="product-price-<?php echo $_id ?><?php echo $this->getIdSuffix() ?>">
                     <?php if ($productCategoryName == 'Jewelry'): ?>
-                        <!-- want to format output of PHP code (price) -->
                         <span class="specialStyle"><?php echo $_coreHelper->formatPrice($_price, true) ;?> </span>
                     <?php else: ?>
                         <h4>Hello h4</h4>
