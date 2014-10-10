@@ -1,0 +1,45 @@
+2014-10-10T14:43:13+00:00 ERR (3): Warning: fopen(/var/www/html/magento/var/locks/index_process_1.lock): failed to open stream: Permission denied  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 423
+2014-10-10T14:43:13+00:00 ERR (3): Warning: fwrite() expects parameter 1 to be resource, boolean given  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 427
+2014-10-10T14:43:13+00:00 ERR (3): Warning: flock() expects parameter 1 to be resource, boolean given  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 482
+2014-10-10T14:43:13+00:00 ERR (3): Warning: fopen(/var/www/html/magento/var/locks/index_process_2.lock): failed to open stream: Permission denied  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 423
+2014-10-10T14:43:13+00:00 ERR (3): Warning: fwrite() expects parameter 1 to be resource, boolean given  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 427
+2014-10-10T14:43:13+00:00 ERR (3): Warning: flock() expects parameter 1 to be resource, boolean given  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 482
+2014-10-10T14:43:13+00:00 ERR (3): Warning: fopen(/var/www/html/magento/var/locks/index_process_3.lock): failed to open stream: Permission denied  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 423
+2014-10-10T14:43:13+00:00 ERR (3): Warning: fwrite() expects parameter 1 to be resource, boolean given  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 427
+2014-10-10T14:43:13+00:00 ERR (3): Warning: flock() expects parameter 1 to be resource, boolean given  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 482
+2014-10-10T14:43:13+00:00 ERR (3): Warning: fopen(/var/www/html/magento/var/locks/index_process_6.lock): failed to open stream: Permission denied  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 423
+2014-10-10T14:43:13+00:00 ERR (3): Warning: fwrite() expects parameter 1 to be resource, boolean given  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 427
+2014-10-10T14:43:13+00:00 ERR (3): Warning: flock() expects parameter 1 to be resource, boolean given  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 482
+2014-10-10T14:43:13+00:00 ERR (3): Warning: fopen(/var/www/html/magento/var/locks/index_process_7.lock): failed to open stream: Permission denied  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 423
+2014-10-10T14:43:13+00:00 ERR (3): Warning: fwrite() expects parameter 1 to be resource, boolean given  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 427
+2014-10-10T14:43:13+00:00 ERR (3): Warning: flock() expects parameter 1 to be resource, boolean given  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 482
+2014-10-10T14:43:13+00:00 ERR (3): Warning: fopen(/var/www/html/magento/var/locks/index_process_8.lock): failed to open stream: Permission denied  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 423
+2014-10-10T14:43:13+00:00 ERR (3): Warning: fwrite() expects parameter 1 to be resource, boolean given  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 427
+2014-10-10T14:43:13+00:00 ERR (3): Warning: flock() expects parameter 1 to be resource, boolean given  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 482
+2014-10-10T14:43:13+00:00 ERR (3): Warning: fopen(/var/www/html/magento/var/locks/index_process_9.lock): failed to open stream: Permission denied  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 423
+2014-10-10T14:43:13+00:00 ERR (3): Warning: fwrite() expects parameter 1 to be resource, boolean given  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 427
+2014-10-10T14:43:13+00:00 ERR (3): Warning: flock() expects parameter 1 to be resource, boolean given  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 482
+2014-10-10T14:43:19+00:00 ERR (3): Warning: fopen(/var/www/html/magento/var/locks/index_process_8.lock): failed to open stream: Permission denied  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 423
+2014-10-10T14:43:19+00:00 ERR (3): Warning: fwrite() expects parameter 1 to be resource, boolean given  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 427
+2014-10-10T14:43:19+00:00 ERR (3): Warning: flock() expects parameter 1 to be resource, boolean given  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 482
+2014-10-10T14:43:22+00:00 ERR (3): Warning: fopen(/var/www/html/magento/var/locks/index_process_1.lock): failed to open stream: Permission denied  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 423
+2014-10-10T14:43:22+00:00 ERR (3): Warning: fwrite() expects parameter 1 to be resource, boolean given  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 427
+2014-10-10T14:43:22+00:00 ERR (3): Warning: flock() expects parameter 1 to be resource, boolean given  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 482
+2014-10-10T14:43:22+00:00 ERR (3): Warning: fopen(/var/www/html/magento/var/locks/index_process_2.lock): failed to open stream: Permission denied  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 423
+2014-10-10T14:43:22+00:00 ERR (3): Warning: fwrite() expects parameter 1 to be resource, boolean given  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 427
+2014-10-10T14:43:22+00:00 ERR (3): Warning: flock() expects parameter 1 to be resource, boolean given  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 482
+2014-10-10T14:43:22+00:00 ERR (3): Warning: fopen(/var/www/html/magento/var/locks/index_process_3.lock): failed to open stream: Permission denied  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 423
+2014-10-10T14:43:22+00:00 ERR (3): Warning: fwrite() expects parameter 1 to be resource, boolean given  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 427
+2014-10-10T14:43:22+00:00 ERR (3): Warning: flock() expects parameter 1 to be resource, boolean given  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 482
+2014-10-10T14:43:22+00:00 ERR (3): Warning: fopen(/var/www/html/magento/var/locks/index_process_6.lock): failed to open stream: Permission denied  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 423
+2014-10-10T14:43:22+00:00 ERR (3): Warning: fwrite() expects parameter 1 to be resource, boolean given  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 427
+2014-10-10T14:43:22+00:00 ERR (3): Warning: flock() expects parameter 1 to be resource, boolean given  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 482
+2014-10-10T14:43:22+00:00 ERR (3): Warning: fopen(/var/www/html/magento/var/locks/index_process_7.lock): failed to open stream: Permission denied  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 423
+2014-10-10T14:43:22+00:00 ERR (3): Warning: fwrite() expects parameter 1 to be resource, boolean given  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 427
+2014-10-10T14:43:22+00:00 ERR (3): Warning: flock() expects parameter 1 to be resource, boolean given  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 482
+2014-10-10T14:43:22+00:00 ERR (3): Warning: fopen(/var/www/html/magento/var/locks/index_process_8.lock): failed to open stream: Permission denied  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 423
+2014-10-10T14:43:22+00:00 ERR (3): Warning: fwrite() expects parameter 1 to be resource, boolean given  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 427
+2014-10-10T14:43:22+00:00 ERR (3): Warning: flock() expects parameter 1 to be resource, boolean given  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 482
+2014-10-10T14:43:22+00:00 ERR (3): Warning: fopen(/var/www/html/magento/var/locks/index_process_9.lock): failed to open stream: Permission denied  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 423
+2014-10-10T14:43:22+00:00 ERR (3): Warning: fwrite() expects parameter 1 to be resource, boolean given  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 427
+2014-10-10T14:43:22+00:00 ERR (3): Warning: flock() expects parameter 1 to be resource, boolean given  in /var/www/html/magento/app/code/core/Mage/Index/Model/Process.php on line 482
