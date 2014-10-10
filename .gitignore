@@ -1,3 +1,5 @@
 var/session
 var/cache
+var/backups
+var/locks
 media/catalog/product/cache
