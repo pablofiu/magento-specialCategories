@@ -54,7 +54,7 @@ $_specialPriceStoreLabel = $this->getProductAttribute('special_price')->getStore
 
 
 $productId = $_product->getId();
-$productCategoryName = Mage::getModel('catalog/product')->load($productId)->getCategory()->getName();
+$productCategoryName = Mage::getModel('catalog/product')->load($productId)->getCategory();
 
 
 
