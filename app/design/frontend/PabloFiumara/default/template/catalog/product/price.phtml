@@ -43,7 +43,7 @@ $_taxHelper = $this->helper('tax');
 $_product = $this->getProduct();
 $_storeId = $_product->getStoreId();
 $_store = $_product->getStore();
-$_id = $_product->getId();
+$_id = $_product->getId();  //Product id
 $_weeeSeparator = '';
 $_simplePricesTax = ($_taxHelper->displayPriceIncludingTax() || $_taxHelper->displayBothPrices());
 $_minimalPriceValue = $_product->getMinimalPrice();
@@ -51,6 +51,15 @@ $_minimalPriceValue = $_store->roundPrice($_store->convertPrice($_minimalPriceVa
 $_minimalPrice = $_taxHelper->getPrice($_product, $_minimalPriceValue, $_simplePricesTax);
 $_convertedFinalPrice = $_store->roundPrice($_store->convertPrice($_product->getFinalPrice()));
 $_specialPriceStoreLabel = $this->getProductAttribute('special_price')->getStoreLabel();
+
+
+$product = Mage::getModel('catalog/product')->load($_id);
+
+$cats = $product->getCategoryIds();
+foreach ($cats as $category_id) {
+    $_cat = Mage::getModel('catalog/category')->load($category_id) ;
+    echo $_cat->getName();
+}
 
 ?>
 
