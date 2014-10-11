@@ -58,7 +58,7 @@ $product = Mage::getModel('catalog/product')->load($_id);
 $cats = $product->getCategoryIds();
 foreach ($cats as $category_id) {
     $_cat = Mage::getModel('catalog/category')->load($category_id) ;
-    echo $_cat->getName();
+    $productCategoryName = $_cat->getName();
 }
 
 ?>
