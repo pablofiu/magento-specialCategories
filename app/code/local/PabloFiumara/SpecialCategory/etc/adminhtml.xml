@@ -4,7 +4,7 @@
         <specialcategory_menu translate="title" module="specialcategory">
             <title>Special Categories</title>
             <sort_order>9999</sort_order>
-            <action>specialCategory/index/index</action>
+            <action>specialcategory/index/index</action>
         </specialcategory_menu>
     </menu>
 </config>
