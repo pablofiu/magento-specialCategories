@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <pablofiumara_specialcategory>
+            <version>1.0.0</version>
+            <depends>
+            </depends>
+        </pablofiumara_specialcategory>
+    </modules>
+    <global>
+        <models />
+        <blocks />
+        <resources />
+        <extraconfig />
+        <helpers>
+            <specialcategory>
+                <class>PabloFiumara_SpecialCategory_Helper</class>
+            </specialcategory>
+        </helpers>
+    </global>
+    <admin>
+        <routers>
+            <pablofiumara_specialcategory>
+                <use>admin</use>
+                <args>
+                    <module>PabloFiumara_SpecialCategory</module>
+                    <frontName>specialcategory</frontName>
+                </args>
+            </pablofiumara_specialcategory>
+        </routers>
+    </admin>
+</config>
