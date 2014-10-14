@@ -24,7 +24,7 @@
                 <use>admin</use>
                 <args>
                     <module>PabloFiumara_SpecialCategory</module>
-                    <frontName>specialCategory</frontName>
+                    <frontName>specialcategory</frontName>
                 </args>
             </pablofiumara_specialcategory>
         </routers>
