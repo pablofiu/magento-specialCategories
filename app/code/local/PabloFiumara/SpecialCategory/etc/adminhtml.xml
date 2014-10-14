@@ -5,7 +5,8 @@
         <!-- Mage_-specialcategory_Helper_Data not found if module is -specialcategory-->
         <!-- Applies to blocks, models and helpers (tested on helper) -->
             <title>My special categories</title>
-            <sort_order>9999</sort_order>
+        <!-- making my extension appear near Dashboard option 
+            <sort_order>9999</sort_order> -->
             <action>specialcategory/index/index</action>
         </specialcategory_menu>
     </menu>
