@@ -13,7 +13,8 @@
         <resources />
         <extraconfig />
         <helpers>
-            <specialcategory>
+            <specialcategory> <!-- if this tag would be called -specialcategory, error will be Mage_Specialcategory_Helper_Data
+                                        not found -->
                 <class>PabloFiumara_SpecialCategory_Helper</class>
             </specialcategory>
         </helpers>
