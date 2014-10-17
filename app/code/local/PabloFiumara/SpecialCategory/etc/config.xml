@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <PabloFiumara_SpecialCategory>
+            <version>0.1.0</version>
+        </PabloFiumara_SpecialCategory>
+    </modules>
+    <global>
+        <models>
+            <pablofiumara_specialcategory>
+                <class>PabloFiumara_SpecialCategory_Model</class>
+            </pablofiumara_specialcategory>
+        </models>
+    </global>
+    <default>
+        <tab>
+            <general>
+                <multiple_dropdown>key,key</multiple_dropdown>
+            </general>
+        </tab>
+    </default>
+</config>
