@@ -62,7 +62,7 @@ foreach ($cats as $category_id) {
 }
 
 $resourceAndConnection = Mage::getSingleton('core/resource')->getConnection('core_read');
-$results = $resourceAndConnection->query("SELECT value FROM core_config_data WHERE path LIKE 'tab/general/multiple_dropdown' ")->fetchAll();
+$resultsArray = $resourceAndConnection->query("SELECT value FROM core_config_data WHERE path LIKE 'tab/general/multiple_dropdown' ")->fetchAll();
 
 ?>
 
