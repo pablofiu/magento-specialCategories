@@ -62,10 +62,8 @@ foreach ($cats as $category_id) {
 }
 
 $configValue = Mage::getStoreConfig('tab/general/multiple_dropdown',Mage::app()->getStore());
-$resource = Mage::getSingleton('core/resource');
-$conn = $resource->getConnection('core_read');
-$results = $conn->query("SELECT value FROM core_config_data WHERE path LIKE 'tab/general/multiple_dropdown' ")->fetchAll();
-print_r($results);
+$resourceAndConnection = Mage::getSingleton('core/resource')->getConnection('core_read');
+$results = $resourceAndConnection->query("SELECT value FROM core_config_data WHERE path LIKE 'tab/general/multiple_dropdown' ")->fetchAll();
 
 ?>
 
