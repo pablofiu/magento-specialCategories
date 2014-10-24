@@ -63,6 +63,11 @@ foreach ($cats as $category_id) {
 
 $resourceAndConnection = Mage::getSingleton('core/resource')->getConnection('core_read');
 $resultsString = $resourceAndConnection->query("SELECT value FROM core_config_data WHERE path LIKE 'tab/general/multiple_dropdown' ")->fetchColumn();
+if (strpos($resultsString,$productCategoryName) !== false) {
+    $willSpecialStyleBeApplied = true;
+} else {
+    $willSpecialStyleBeApplied = false;
+}
 
 
 
