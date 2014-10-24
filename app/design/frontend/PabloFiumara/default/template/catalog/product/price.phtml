@@ -226,7 +226,7 @@ if (strpos($resultsString,$productCategoryName) !== false) {
                 </span>
             <?php else: ?>
                 <span class="regular-price" id="product-price-<?php echo $_id ?><?php echo $this->getIdSuffix() ?>">
-                    <?php if ($productCategoryName == 'Jewelry'): ?>
+                    <?php if ($willSpecialStyleBeApplied == true): ?>
                         <span class="specialCategory">
                     <?php endif ?>
                     <?php if ($_finalPrice == $_price): ?>
