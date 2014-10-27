@@ -7,8 +7,10 @@ class PabloFiumara_SpecialCategory_Model_System_Config_Source_Dropdown_Values
         $categories = Mage::getModel('catalog/category')->getCollection()->addAttributeToSelect('*')->addIsActiveFilter();
         $categoriesList = array();
         foreach ($categories as $obj) {
+            if (!$obj->hasChildren()) {
             $array = array("value" => $obj->getName(),"label" => $obj->getName(),);
             array_push($categoriesList, $array);
+            }
         }
         return $categoriesList;
     }
