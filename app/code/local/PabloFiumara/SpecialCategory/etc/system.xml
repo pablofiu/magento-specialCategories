@@ -33,6 +33,15 @@
                             <show_in_website>0</show_in_website>
                             <show_in_store>0</show_in_store>
                         </multiple_dropdown>
+                        <my_color translate="label">
+                            <label>Special colour</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>pablofiumara_specialcategory/adminhtml_system_config_color</frontend_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </my_color>
                     </fields>
                 </general>
             </groups>
