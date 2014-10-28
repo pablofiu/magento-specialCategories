@@ -6,6 +6,16 @@
         </PabloFiumara_SpecialCategory>
     </modules>
     <global>
+        <helpers>
+            <pablofiumara_specialcategory>
+                <class>PabloFiumara_SpecialCategory_Helper</class>
+            </pablofiumara_specialcategory>
+        </helpers>
+        <blocks>
+            <pablofiumara_specialcategory>
+                <class>PabloFiumara_SpecialCategory_Block</class>
+            </pablofiumara_specialcategory>
+        </blocks>
         <models>
             <pablofiumara_specialcategory>
                 <class>PabloFiumara_SpecialCategory_Model</class>
@@ -18,5 +28,38 @@
                 <multiple_dropdown>key,key</multiple_dropdown>
             </general>
         </tab>
+        <pablofiumara_specialcategory>
+            <my_fields>
+                <my_color>333</my_color>
+            </my_fields>
+        </pablofiumara_specialcategory>
     </default>
+    <adminhtml>
+        <layout>
+            <updates>
+                <pablofiumara_specialcategory>
+                    <file>pablofiumara_specialcategory.xml</file>
+                </pablofiumara_specialcategory>
+            </updates>
+        </layout>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <pablofiumara_specialcategory translate="title" module="pablofiumara_specialcategory">
+                                            <title>Special Categories</title>
+                                        </pablofiumara_specialcategory>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
 </config>
