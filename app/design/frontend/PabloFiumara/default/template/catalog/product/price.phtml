@@ -64,6 +64,7 @@ foreach ($cats as $category_id) {
 $resourceAndConnection = Mage::getSingleton('core/resource')->getConnection('core_read');
 $resultsString = $resourceAndConnection->query("SELECT value FROM core_config_data WHERE path LIKE 'tab/general/multiple_dropdown' ")->fetchColumn();
 $specialColour = $resourceAndConnection->query("SELECT value FROM core_config_data WHERE path LIKE 'tab/general/my_color' ")->fetchColumn();
+$specialColour2 = '#' . $specialColour;
 
 if (strpos($resultsString,$productCategoryName) !== false) {
     $willSpecialStyleBeApplied = true;
@@ -229,7 +230,7 @@ if (strpos($resultsString,$productCategoryName) !== false) {
             <?php else: ?>
                 <span class="regular-price" id="product-price-<?php echo $_id ?><?php echo $this->getIdSuffix() ?>">
                     <?php if ($willSpecialStyleBeApplied == true): ?>
-                        <span class="specialCategory">
+                        <span style="color:<?php echo $specialColour2?>">Hello
                     <?php endif ?>
                     <?php if ($_finalPrice == $_price): ?>
                         <?php echo $_coreHelper->formatPrice($_price, true) ?>
