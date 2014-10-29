@@ -880,7 +880,7 @@ tr.summary-details-excluded { font-style:italic; }
 .price-box { margin:5px 0; }
 .price-box .price { font-weight:bold; color:#c76200; }
 
-/* Regular price. If category is Jewelry(specialCategory class), price colour is green. If not, it is regular-price class  */
+/* Regular price. If admin has chosen one or more special categories, price colour is green. If not, it is regular-price class  */
 .regular-price { color:#c76200; }
 .regular-price .price { font-weight:bold; font-size:13px; color:#c76200; }
 .block .regular-price,
