@@ -4,6 +4,8 @@
 		<reference name="head">
 			<action method="addJs"><script>jscolor/jscolor.js</script></action>
             <action method="addJs"><script>PabloFiumara_SpecialCategory/pablofiumara_specialcategory.js</script></action>
+            <action method="addCss"><file>PabloFiumara/SpecialCategory/custom.css</file>
+            </action>
 		</reference>
 	</adminhtml_system_config_edit>
 </layout>
