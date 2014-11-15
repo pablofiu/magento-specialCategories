@@ -1,3 +1,4 @@
 console.log("from inside javascript frontend file");
-variable = $$('.regular-price .price')[1].hasClassName(regular-price);
+var textContainer = document.getElementsByClassName('price');
+console.log (textContainer);
 console.log("before going away from inside javascript frontend file");
