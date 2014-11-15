@@ -92,7 +92,7 @@ if (strpos($resultsString,$productCategoryName) !== false) {
         <?php $_weeeTaxAmount = $_store->roundPrice($_store->convertPrice($_weeeTaxAmount)); ?>
         <?php $_weeeTaxAmountInclTaxes = $_store->roundPrice($_store->convertPrice($_weeeTaxAmountInclTaxes)); ?>
 
-        <div class="price-box">
+        <div style="color:<?php echo $specialColour2?>">
         <?php $_convertedPrice = $_store->roundPrice($_store->convertPrice($_product->getPrice())); ?>
         <?php $_price = $_taxHelper->getPrice($_product, $_convertedPrice); ?>
         <?php $_regularPrice = $_taxHelper->getPrice($_product, $_convertedPrice, $_simplePricesTax); ?>
@@ -239,7 +239,6 @@ if (strpos($resultsString,$productCategoryName) !== false) {
                     <?php else: ?>
                         <?php echo $_coreHelper->formatPrice($_finalPrice, true) ?>
                     <?php endif; ?></span>
-                    </span>
                 <?php endif; ?>
             <?php endif; ?>
         <?php else: /* if ($_finalPrice == $_price): */ ?>
@@ -463,7 +462,7 @@ if (strpos($resultsString,$productCategoryName) !== false) {
         }
         ?>
         <?php if ($price): ?>
-            <div class="price-box">
+            <div>
                 <p<?php if ($showMinPrice): ?> class="minimal-price"<?php endif ?>>
                     <?php if ($showMinPrice): ?>
                         <span class="price-label"><?php echo $this->__('Starting at:') ?></span>
