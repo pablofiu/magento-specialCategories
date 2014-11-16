@@ -9,16 +9,15 @@ class PabloFiumara_SpecialCategory_Model_System_Config_Source_Dropdown_Values
         foreach ($categories as $obj) {
             if ($obj->getName() !== 'New Arrivals') {
                 if ($obj->getName() == 'Default Category' || !$obj->hasChildren()) {
-                    $array = array("value" => $obj->getName(),"label" => $obj->getName(),);
+                    $array = array("value" => $obj->getId(),"label" => $obj->getName(),);
                     if ($obj->getName() == 'Default Category') {
                         $array = array("value" => $obj->getName(),"label" => "No Special Categories",);
                     }
                     array_push($categoriesList, $array);
-                    $input = array_map("unserialize", array_unique(array_map("serialize", $categoriesList)));
                 }
             }
         }
-        return $input;
+        return $categoriesList;
     }
 }
 
