@@ -9,7 +9,7 @@ class PabloFiumara_SpecialCategory_Model_System_Config_Source_Dropdown_Values
         foreach ($categories as $obj) {
             if ($obj->getName() !== 'New Arrivals') {
                 if ($obj->getName() == 'Default Category' || !$obj->hasChildren()) {
-                    $array = array("value" => $obj->getId(),"label" => $obj->getName(),);
+                    $array = array("value" => $obj->getId(),"label" => $obj->getName() . $obj->getParentCategory()->getName(),);
                     if ($obj->getName() == 'Default Category') {
                         $array = array("value" => $obj->getName(),"label" => "No Special Categories",);
                     }
