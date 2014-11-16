@@ -14,12 +14,12 @@ class PabloFiumara_SpecialCategory_Model_System_Config_Source_Dropdown_Values
                         $array = array("value" => $obj->getName(),"label" => "No Special Categories",);
                     }
                     array_push($categoriesList, $array);
+                    $input = array_map("unserialize", array_unique(array_map("serialize", $categoriesList)));
                 }
             }
         }
-        return $categoriesList;
+        return $input;
     }
-
 }
 
 
