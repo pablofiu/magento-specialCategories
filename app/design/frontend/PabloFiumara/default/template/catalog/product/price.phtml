@@ -66,7 +66,16 @@ $resultsString = $resourceAndConnection->query("SELECT value FROM core_config_da
 $specialColour = $resourceAndConnection->query("SELECT value FROM core_config_data WHERE path LIKE 'tab/general/my_color' ")->fetchColumn();
 $specialColour2 = '#' . $specialColour;
 
-if (strpos($resultsString,$productCategoryName) !== false) {
+
+$specialCategoryChosenByAdmin = Mage::getModel('catalog/category')->load($resultsString)->getName();
+$parentCategory = Mage::getModel('catalog/category')->load($resultsString)->getParentCategory()->getName();
+$parentCategoryAndCurrentCategory = $parentCategory . '->' . $specialCategoryChosenByAdmin;
+
+
+
+
+
+if (strpos($parentCategoryAndCurrentCategory,$productCategoryName) !== false) {
     $willSpecialStyleBeApplied = true;
 } else {
     $willSpecialStyleBeApplied = false;
