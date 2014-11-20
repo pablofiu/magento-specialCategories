@@ -84,7 +84,7 @@ $currentCategoryId = Mage::registry('current_category')->getId();
 
 foreach($categoryCollection as $cat){
     $productCategories = $cat->getId();
-    if ($specialCategoryChosenByAdmin == $productCategories && $specialCategoryChosenByAdmin == $currentCategoryId) {
+    if (strpos($resultsString, $currentCategoryId) !== false) {
         $willSpecialStyleBeApplied = true;
         break;
     } else {
