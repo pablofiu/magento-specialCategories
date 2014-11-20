@@ -53,15 +53,15 @@ $_convertedFinalPrice = $_store->roundPrice($_store->convertPrice($_product->get
 $_specialPriceStoreLabel = $this->getProductAttribute('special_price')->getStoreLabel();
 
 
-$resourceAndConnection = Mage::getSingleton('core/resource')->getConnection('core_read');
-$resultsString = $resourceAndConnection->query("SELECT value FROM core_config_data WHERE path LIKE 'tab/general/multiple_dropdown' ")->fetchColumn();
-$specialColour = $resourceAndConnection->query("SELECT value FROM core_config_data WHERE path LIKE 'tab/general/my_color' ")->fetchColumn();
-$specialColour2 = '#' . $specialColour;
+$databaseResource = Mage::getSingleton('core/resource')->getConnection('core_read');
+$specialCategoriesIds = $databaseResource->query("SELECT value FROM core_config_data WHERE path LIKE 'tab/general/multiple_dropdown' ")->fetchColumn();
+$specialColour = '#' . $databaseResource->query("SELECT value FROM core_config_data WHERE path LIKE 'tab/general/my_color' ")->fetchColumn();
+
 
 $currentCategoryId = Mage::registry('current_category')->getId();
 
 
-if (strpos($resultsString, $currentCategoryId) !== false) {
+if (strpos($specialCategoriesIds, $currentCategoryId) !== false) {
     $willSpecialStyleBeApplied = true;
     } else {
         $willSpecialStyleBeApplied = false;
@@ -87,7 +87,7 @@ if (strpos($resultsString, $currentCategoryId) !== false) {
         <?php $_weeeTaxAmount = $_store->roundPrice($_store->convertPrice($_weeeTaxAmount)); ?>
         <?php $_weeeTaxAmountInclTaxes = $_store->roundPrice($_store->convertPrice($_weeeTaxAmountInclTaxes)); ?>
 
-        <div style="color:<?php echo $specialColour2?>">
+        <div style="color:<?php echo $specialColour?>">
         <?php $_convertedPrice = $_store->roundPrice($_store->convertPrice($_product->getPrice())); ?>
         <?php $_price = $_taxHelper->getPrice($_product, $_convertedPrice); ?>
         <?php $_regularPrice = $_taxHelper->getPrice($_product, $_convertedPrice, $_simplePricesTax); ?>
