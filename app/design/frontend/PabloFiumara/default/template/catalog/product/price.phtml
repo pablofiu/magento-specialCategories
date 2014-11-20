@@ -58,7 +58,7 @@ $specialCategoriesIds = $databaseResource->query("SELECT value FROM core_config_
 $specialColour = '#' . $databaseResource->query("SELECT value FROM core_config_data WHERE path LIKE 'tab/general/my_color' ")->fetchColumn();
 
 
-$currentCategoryId = Mage::registry('current_category')->getId();
+$currentCategoryId = $this->getCurrentCategory();
 
 
 if (strpos($specialCategoriesIds, $currentCategoryId) !== false) {
