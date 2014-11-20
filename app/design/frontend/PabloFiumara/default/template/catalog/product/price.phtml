@@ -53,44 +53,20 @@ $_convertedFinalPrice = $_store->roundPrice($_store->convertPrice($_product->get
 $_specialPriceStoreLabel = $this->getProductAttribute('special_price')->getStoreLabel();
 
 
-$product = Mage::getModel('catalog/product')->load($_id);
-
-$cats = $product->getCategoryIds();
-foreach ($cats as $category_id) {
-    $_cat = Mage::getModel('catalog/category')->load($category_id) ;
-    $productCategoryName = $_cat->getName();
-}
-
 $resourceAndConnection = Mage::getSingleton('core/resource')->getConnection('core_read');
 $resultsString = $resourceAndConnection->query("SELECT value FROM core_config_data WHERE path LIKE 'tab/general/multiple_dropdown' ")->fetchColumn();
 $specialColour = $resourceAndConnection->query("SELECT value FROM core_config_data WHERE path LIKE 'tab/general/my_color' ")->fetchColumn();
 $specialColour2 = '#' . $specialColour;
 
-
-$specialCategoryChosenByAdmin = Mage::getModel('catalog/category')->load($resultsString)->getId();
-$parentCategory = Mage::getModel('catalog/category')->load($resultsString)->getParentCategory()->getId();
-$parentCategoryAndCurrentCategory = $parentCategory . '->' . $specialCategoryChosenByAdmin;
-
-
-
-$currentCatIds = $_product->getCategoryIds();
-$categoryCollection = Mage::getResourceModel('catalog/category_collection')
-    ->addAttributeToSelect('name')
-    ->addAttributeToSelect('entity_id')
-    ->addAttributeToFilter('entity_id', $currentCatIds)
-    ->addIsActiveFilter();
-
 $currentCategoryId = Mage::registry('current_category')->getId();
 
-foreach($categoryCollection as $cat){
-    $productCategories = $cat->getId();
-    if (strpos($resultsString, $currentCategoryId) !== false) {
-        $willSpecialStyleBeApplied = true;
-        break;
+
+if (strpos($resultsString, $currentCategoryId) !== false) {
+    $willSpecialStyleBeApplied = true;
     } else {
         $willSpecialStyleBeApplied = false;
-    }
 }
+
 
 
 ?>
