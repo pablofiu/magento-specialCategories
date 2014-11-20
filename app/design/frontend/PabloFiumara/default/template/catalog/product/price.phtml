@@ -67,20 +67,30 @@ $specialColour = $resourceAndConnection->query("SELECT value FROM core_config_da
 $specialColour2 = '#' . $specialColour;
 
 
-$specialCategoryChosenByAdmin = Mage::getModel('catalog/category')->load($resultsString)->getName();
-$parentCategory = Mage::getModel('catalog/category')->load($resultsString)->getParentCategory()->getName();
+$specialCategoryChosenByAdmin = Mage::getModel('catalog/category')->load($resultsString)->getId();
+$parentCategory = Mage::getModel('catalog/category')->load($resultsString)->getParentCategory()->getId();
 $parentCategoryAndCurrentCategory = $parentCategory . '->' . $specialCategoryChosenByAdmin;
 
 
 
+$currentCatIds = $_product->getCategoryIds();
+$categoryCollection = Mage::getResourceModel('catalog/category_collection')
+    ->addAttributeToSelect('name')
+    ->addAttributeToSelect('entity_id')
+    ->addAttributeToFilter('entity_id', $currentCatIds)
+    ->addIsActiveFilter();
 
+$currentCategoryId = Mage::registry('current_category')->getId();
 
-if (strpos($parentCategoryAndCurrentCategory,$productCategoryName) !== false) {
-    $willSpecialStyleBeApplied = true;
-} else {
-    $willSpecialStyleBeApplied = false;
+foreach($categoryCollection as $cat){
+    $productCategories = $cat->getId();
+    if ($specialCategoryChosenByAdmin == $productCategories && $specialCategoryChosenByAdmin == $currentCategoryId) {
+        $willSpecialStyleBeApplied = true;
+        break;
+    } else {
+        $willSpecialStyleBeApplied = false;
+    }
 }
-
 
 
 ?>
