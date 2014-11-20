@@ -3,7 +3,7 @@
     <tabs>
         <myconf translate="label">
             <label>Special Categories</label>
-            <sort_order>75</sort_order>
+            <sort_order>175</sort_order>
         </myconf>
     </tabs>
     <sections>
