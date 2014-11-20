@@ -31,6 +31,28 @@
  * @see Mage_Review_Block_Product_View
  */
 ?>
+<?php
+$databaseResource = Mage::getSingleton('core/resource')->getConnection('core_read');
+$specialCategoriesIds = $databaseResource->query("SELECT value FROM core_config_data WHERE path LIKE 'tab/general/multiple_dropdown' ")->fetchColumn();
+$specialColour = '#' . $databaseResource->query("SELECT value FROM core_config_data WHERE path LIKE 'tab/general/my_color' ")->fetchColumn();
+
+
+$currentCategoryId = Mage::getModel('catalog/layer')->getCurrentCategory()->getId();
+
+
+if (strpos($specialCategoriesIds, $currentCategoryId) !== false) {
+$willSpecialStyleBeApplied = true;
+} else {
+$willSpecialStyleBeApplied = false;
+}
+
+?>
+
+<?php if ($willSpecialStyleBeApplied == true): ?>
+<?php echo 'test'; ?>
+
+<?php endif ?>
+
 <?php $_helper = $this->helper('catalog/output'); ?>
 <?php $_product = $this->getProduct(); ?>
 <script type="text/javascript">
