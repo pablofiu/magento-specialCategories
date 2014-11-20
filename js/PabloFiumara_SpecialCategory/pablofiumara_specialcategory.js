@@ -1,1 +1,1 @@
-console.log("hello from admin");
+console.log("hello from admin>system>configuration");
