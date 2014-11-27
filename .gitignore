@@ -1,6 +1,0 @@
-var/session
-var/cache
-var/backups
-var/locks
-var/resource_config.json
-media/catalog/product/cache
