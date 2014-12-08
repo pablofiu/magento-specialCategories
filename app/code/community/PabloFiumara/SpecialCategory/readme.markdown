@@ -21,7 +21,7 @@ Installation
 1. Unzip the extension where Magento is installed.
 2. Log in to Admin.
 3. Go to System - Configuration. Under Tab 'General', click on Design. Below Package group there is a configuration field named 'Current Package Name'. Write "PabloFiumara" there (without quotation marks). Below Themes group, there is a configuration field named 'Default'. Write "SpecialCategories" there (without quotation marks). Save Configuration click on 'Save Config'. 
-4. Below Special Categories Tab there is section named 'Special Categories'. Click on it and start using the extension. To start using the extension log out and log into the admin. Then, go to System - Configuration - Special Categories Tab and click on Special Categories section.  
+4. Below Special Categories Tab there is section named 'Special Categories'. Click on it and start using the extension. To start using the extension log out and log into the admin. Then, clear the cache: go to System - Cache Management - Click on 'Select All' - Choose 'Refresh' from 'Actions' dropdown menu - Press 'Submit' button. Finally, go to System - Configuration - Special Categories Tab and click on Special Categories section.  
 
 Uninstallation
 --------------
