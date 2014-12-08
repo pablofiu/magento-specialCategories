@@ -3,7 +3,7 @@
     <modules>
         <PabloFiumara_SpecialCategory>
             <active>true</active>
-            <codePool>local</codePool>
+            <codePool>community</codePool>
         </PabloFiumara_SpecialCategory>
     </modules>
 </config>
